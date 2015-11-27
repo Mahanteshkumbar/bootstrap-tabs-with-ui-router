@@ -1,10 +1,10 @@
 angular.module('uibTab',['ui.router','ui.bootstrap'])
 .config(function ($stateProvider,$urlRouterProvider) {
-  //$urlRouterProvider.otherwise("/maintab");
+  $urlRouterProvider.otherwise("/maintab");
   $stateProvider
     .state('maintab', {
       url: '/maintab',
-      templateUrl: 'tab/maintab.html',
+      templateUrl: 'maintab.html',
       controller: 'uibTabs'
     })
     .state("maintab.goto", {
