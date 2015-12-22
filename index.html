@@ -10,8 +10,22 @@
 </head>
 <body ng-controller="uibTabs">
 	<div class="container">
+		<h1 title="Mahantesh Kumbar">Welcome</h1>
 		<div class="row">
-			<h1 title="Mahantesh Kumbar">Welcome</h1>
+		   <div class="col-md-12">
+			 <hr />
+				<h2 title="Mahantesh Kumbar">BackButton without using ui-router</h2>
+			  <uib-tabset>
+
+				<uib-tab heading="Static title" active="main.active"><h1>You came Back!!!!!!</h1></uib-tab>
+
+				<uib-tab heading="Static title" active="mains.active"><h1>Wooooooo good to go !!!!!!</h1><button type="button" class="btn btn-default btn-sm" ng-click="main.active=true">Back</button></uib-tab>
+
+			  </uib-tabset>
+			<hr />
+		   </div>
+		</div>
+		<div class="row">
 			<ui-view></ui-view>
 		</div>
 	</div>
